@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #1e293b;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero */
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 6vw, 60px);
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 550px;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+            transform: translateY(-3px);
+        }
+
+        /* General sections */
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .section-title span {
+            color: #38bdf8;
+        }
+
+        /* About */
+
+        .about {
+            background: #1e293b;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        /* Skills */
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 20px 35px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            border-color: #38bdf8;
+            transform: translateY(-5px);
+        }
+
+        /* Projects */
+
+        .projects {
+            background: #1e293b;
+        }
+
+        .project-container {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+            border-color: #38bdf8;
+        }
+
+        .project-card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .project-card a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Contact */
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 25px;
+            color: #cbd5e1;
+        }
+
+        /* Footer */
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #1e293b;
+            color: #94a3b8;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                font-size: 14px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            section {
+                padding: 60px 6%;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+        <div class="logo">MyPortfolio.</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+
+    <header class="hero" id="home">
+        <h1>Hello, I'm <span>Your Name</span></h1>
+
+        <h2>Student | Programmer | Creator</h2>
+
+        <p>
+            Welcome to my personal portfolio!
+            I enjoy coding, creating projects,
+            and learning new technologies.
+        </p>
+
+        <a href="#projects" class="btn">
+            View My Work
+        </a>
+    </header>
+
+    <!-- About -->
+
+    <section class="about" id="about">
+        <h2 class="section-title">
+            About <span>Me</span>
+        </h2>
+
+        <p>
+            Hi! I'm a passionate programmer who
+            enjoys solving problems and building
+            interesting projects.
+
+            I love learning Python, HTML, CSS,
+            and exploring the world of technology.
+
+            My goal is to keep improving my skills
+            and create amazing things!
+        </p>
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills">
+        <h2 class="section-title">
+            My <span>Skills</span>
+        </h2>
+
+        <div class="skills-container">
+            <div class="skill">Python</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section class="projects" id="projects">
+        <h2 class="section-title">
+            My <span>Projects</span>
+        </h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>Python Quiz Game</h3>
+
+                <p>
+                    An interactive quiz application
+                    built using Python and Tkinter.
+                </p>
+
+                <a href="#">
+                    View Project →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Website</h3>
+
+                <p>
+                    A responsive personal website
+                    created with HTML and CSS.
+                </p>
+
+                <a href="#">
+                    View Project →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Calculator</h3>
+
+                <p>
+                    A simple calculator that performs
+                    basic mathematical operations.
+                </p>
+
+                <a href="#">
+                    View Project →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">
+            Contact <span>Me</span>
+        </h2>
+
+        <p>
+            Have a question or want to work together?
+            Feel free to contact me!
+        </p>
+
+        <a
+            href="mailto:yourname@example.com"
+            class="btn"
+        >
+            Send Email
+        </a>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>
+            © 2026 Your Name.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
