@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Darren’s personal reading journal. Books, reflections, and ideas worth keeping.">
+  <title>Bookshelf · Darren’s Portfolio</title>
+  <link rel="stylesheet" href="bookshelf.css">
+  <script src="books.js" defer></script>
+  <script src="bookshelf.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to bookshelf</a>
+  <header class="portfolio-header">
+    <nav aria-label="Main navigation">
+      <a class="logo" href="index.html#home">Darren.</a>
+      <ul>
+        <li><a href="index.html#home">Home</a></li><li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li><li><a href="index.html#projects">Projects</a></li>
+        <li><a href="bookshelf.html" aria-current="page">Bookshelf</a></li><li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy"><p class="eyebrow"><span aria-hidden="true">✳</span> A PERSONAL READING JOURNAL</p>
+        <h1 id="page-title">Bookshelf<span class="heading-dot">.</span></h1>
+        <p class="subtitle">Books I’ve read, loved, learned from,<br class="desktop-break"> or occasionally regretted finishing.</p>
+        <p class="personal-note">A little collection of other people’s worlds.</p>
+      </div>
+      <aside class="goal" aria-labelledby="goal-title">
+        <div class="goal-top"><span aria-hidden="true">▤</span><span>ONE PAGE AT A TIME</span></div>
+        <h2 id="goal-title">2026 Reading Goal</h2>
+        <p><strong id="goal-count">18</strong><span> / 30 books</span><span class="goal-percent" id="goal-percent">60%</span></p>
+        <progress id="goal-progress" value="18" max="30" aria-label="2026 reading goal">18 / 30 books</progress>
+        <p class="goal-note" id="goal-note">12 more adventures to go.</p>
+      </aside>
+    </section>
+    <section class="stats" aria-label="Reading statistics">
+      <div><strong id="total-read">18</strong><span>Books read</span></div>
+      <div><strong id="year-read">18</strong><span>Read this year</span></div>
+      <div><strong id="average-rating">4.3</strong><span>Average rating <span class="star" aria-hidden="true">★</span></span></div>
+      <div><strong id="currently-reading">3</strong><span>Currently reading</span></div>
+      <p class="sample-note">A sample collection<br>for a growing bookshelf.</p>
+    </section>
+    <section class="library" aria-label="Book collection">
+      <div class="library-top"><div class="tabs" role="group" aria-label="Filter by reading status">
+        <button type="button" data-status="all" aria-pressed="true">All <span></span></button>
+        <button type="button" data-status="read" aria-pressed="false">Read <span></span></button>
+        <button type="button" data-status="reading" aria-pressed="false">Reading <span></span></button>
+        <button type="button" data-status="want-to-read" aria-pressed="false">Want to Read <span></span></button>
+      </div><span class="library-caption">Well-thumbed pages. Well-kept thoughts.</span></div>
+      <div class="filters">
+        <label class="search"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span class="sr-only">Search books or authors</span><input id="search" type="search" placeholder="Search books or authors" autocomplete="off"></label>
+        <label><span class="sr-only">Genre</span><select id="genre"><option value="all">All genres</option></select></label>
+        <label><span class="sr-only">Year</span><select id="year"><option value="all">All years</option></select></label>
+        <label class="sort"><span>Sort by</span><select id="sort"><option value="recent">Recently read</option><option value="rating">Rating</option><option value="title">Title A–Z</option><option value="author">Author</option></select></label>
+      </div>
+      <div class="results-toolbar"><p id="result-count" role="status" aria-live="polite"></p><label class="group-toggle"><input id="group-years" type="checkbox"> Group by year</label></div>
+      <div id="book-results"></div>
+      <div id="empty" hidden><h2>No books on this shelf… yet.</h2><p>Try another title, author, or filter.</p><button id="reset" type="button">Clear filters</button></div>
+      <p class="shelf-end">Every book leaves a little something behind. <span aria-hidden="true">✳</span></p>
+    </section>
+  </main>
+  <footer><p>© 2026 Darren. All Rights Reserved.</p></footer>
+  <dialog id="book-dialog" aria-labelledby="detail-title"><button class="close-dialog" type="button" aria-label="Close book details">×</button><div id="detail-content"></div></dialog>
+  <noscript><p class="noscript">Please enable JavaScript to browse the bookshelf and use its filters.</p></noscript>
+</body>
+</html>
