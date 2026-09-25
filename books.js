@@ -6,7 +6,7 @@ const books = [
   {
     title: "Harry Potter and the Philosopher's Stone",
     author: "J. K. Rowling",
-    isbn: "9780593652886",
+    isbn: "9781408894620",
     rating: 5,
     status: "read",
     genre: "Fantasy",
