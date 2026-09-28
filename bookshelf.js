@@ -6,8 +6,12 @@ const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '
 const dateLabel = date => date ? new Intl.DateTimeFormat('en', { month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`)) : 'Not finished yet';
 const stars = rating => {
   if (rating == null) return '<span class="status-label">Not rated yet</span>';
-  const filled = Math.max(0, Math.min(5, Math.round(rating)));
-  return `<span class="rating" role="img" aria-label="${rating} out of 5 stars">${'★'.repeat(filled)}${'☆'.repeat(5 - filled)}</span>`;
+  const rounded = Math.max(0, Math.min(5, Math.round(rating * 2) / 2));
+  const full = Math.floor(rounded);
+  const half = rounded % 1 !== 0;
+  const empty = 5 - Math.ceil(rounded);
+  const icons = '★'.repeat(full) + (half ? '⯪' : '') + '☆'.repeat(empty);
+  return `<span class="rating" role="img" aria-label="${rating} out of 5 stars">${icons} <span class="rating-text">${rating}/5</span></span>`;
 };
 function coverHTML(book) {
   return `<div class="cover"><img src="${escapeHTML(book.cover)}" alt="Cover of ${escapeHTML(book.title)}" loading="lazy" referrerpolicy="no-referrer"></div>`;
