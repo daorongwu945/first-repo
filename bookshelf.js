@@ -4,7 +4,11 @@ const statusLabels = { read: 'Read', reading: 'Reading', 'want-to-read': 'Want t
 let activeStatus = 'all';
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 const dateLabel = date => date ? new Intl.DateTimeFormat('en', { month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`)) : 'Not finished yet';
-const stars = rating => rating == null ? '<span class="status-label">Not rated yet</span>' : `<span class="rating" role="img" aria-label="${rating} out of 5 stars">${'★'.repeat(rating)}${'☆'.repeat(5 - rating)}</span>`;
+const stars = rating => {
+  if (rating == null) return '<span class="status-label">Not rated yet</span>';
+  const filled = Math.max(0, Math.min(5, Math.round(rating)));
+  return `<span class="rating" role="img" aria-label="${rating} out of 5 stars">${'★'.repeat(filled)}${'☆'.repeat(5 - filled)}</span>`;
+};
 function coverHTML(book) {
   return `<div class="cover"><img src="${escapeHTML(book.cover)}" alt="Cover of ${escapeHTML(book.title)}" loading="lazy" referrerpolicy="no-referrer"></div>`;
 }
