@@ -92,7 +92,7 @@ const books = [
   {
     title: "The Brilliant World of Tom Gates",
     author: "Liz Pichon",
-    isbn: "9781743831342",
+    isbn: "9781407120690",
     rating: 4.20,
     status: "read",
     genre: "Humor",
@@ -104,7 +104,7 @@ const books = [
   {
     title: "Excellent Excuses (and Other Good Stuff)",
     author: "Liz Pichon",
-    isbn: "9781743831359",
+    isbn: "9781407124407",
     rating: 4.39,
     status: "read",
     genre: "Humor",
@@ -116,7 +116,7 @@ const books = [
   {
     title: "Everything's Amazing (Sort Of)",
     author: "Liz Pichon",
-    isbn: "9781743831366",
+    isbn: "9781407124414",
     rating: 4.43,
     status: "read",
     genre: "Humor",
@@ -128,7 +128,7 @@ const books = [
   {
     title: "Genius Ideas (Mostly)",
     author: "Liz Pichon",
-    isbn: "9781743831373",
+    isbn: "9781407134505",
     rating: 4.44,
     status: "read",
     genre: "Humor",
@@ -140,7 +140,7 @@ const books = [
   {
     title: "Tom Gates Is Absolutely Fantastic (at Some Things)",
     author: "Liz Pichon",
-    isbn: "9781743832776",
+    isbn: "9781407134512",
     rating: 4.42,
     status: "read",
     genre: "Humor",
@@ -152,7 +152,7 @@ const books = [
   {
     title: "Extra Special Treats (Not)",
     author: "Liz Pichon",
-    isbn: "9781743832783",
+    isbn: "9781407134529",
     rating: 4.47,
     status: "read",
     genre: "Humor",
@@ -164,7 +164,7 @@ const books = [
   {
     title: "A Tiny Bit Lucky",
     author: "Liz Pichon",
-    isbn: "9781743832790",
+    isbn: "9781407148809",
     rating: 4.45,
     status: "read",
     genre: "Humor",
@@ -176,7 +176,7 @@ const books = [
   {
     title: "Yes! No. (Maybe...)",
     author: "Liz Pichon",
-    isbn: "9781743832806",
+    isbn: "9781407148816",
     rating: 4.42,
     status: "read",
     genre: "Humor",
@@ -188,7 +188,7 @@ const books = [
   {
     title: "Top of the Class (Nearly)",
     author: "Liz Pichon",
-    isbn: "9781743832813",
+    isbn: "9781407161327",
     rating: 4.44,
     status: "read",
     genre: "Humor",
@@ -200,7 +200,7 @@ const books = [
   {
     title: "Super Good Skills (Almost)",
     author: "Liz Pichon",
-    isbn: "9781743832820",
+    isbn: "9781407163147",
     rating: 4.41,
     status: "read",
     genre: "Humor",
@@ -212,7 +212,7 @@ const books = [
   {
     title: "DogZombies Rule (For Now)",
     author: "Liz Pichon",
-    isbn: "9781743832837",
+    isbn: "9781407171340",
     rating: 4.42,
     status: "read",
     genre: "Humor",
@@ -224,7 +224,7 @@ const books = [
   {
     title: "Family, Friends and Furry Creatures",
     author: "Liz Pichon",
-    isbn: "9781743832844",
+    isbn: "9781407178349",
     rating: 4.51,
     status: "read",
     genre: "Humor",
@@ -236,7 +236,7 @@ const books = [
   {
     title: "Epic Adventure (Kind Of)",
     author: "Liz Pichon",
-    isbn: "9781743832851",
+    isbn: "9781407178356",
     rating: 4.47,
     status: "read",
     genre: "Humor",
@@ -248,7 +248,7 @@ const books = [
   {
     title: "Biscuits, Bands and Very Big Plans",
     author: "Liz Pichon",
-    isbn: "9781743832868",
+    isbn: "9781407186726",
     rating: 4.45,
     status: "read",
     genre: "Humor",
@@ -260,7 +260,7 @@ const books = [
   {
     title: "What Monster?",
     author: "Liz Pichon",
-    isbn: "9781743832875",
+    isbn: "9781407189314",
     rating: 4.48,
     status: "read",
     genre: "Humor",
@@ -272,7 +272,7 @@ const books = [
   {
     title: "Mega Make and Do and Stories Too!",
     author: "Liz Pichon",
-    isbn: "9781743831595",
+    isbn: "9781407143620",
     rating: 4.36,
     status: "read",
     genre: "Activity",
@@ -284,7 +284,7 @@ const books = [
   {
     title: "Spectacular School Trip (Really...)",
     author: "Liz Pichon",
-    isbn: "9781743837108",
+    isbn: "9781407193519",
     rating: 4.50,
     status: "read",
     genre: "Humor",
@@ -296,7 +296,7 @@ const books = [
   {
     title: "Ten Tremendous Tales",
     author: "Liz Pichon",
-    isbn: "9781760974282",
+    isbn: "9781407193526",
     rating: 4.48,
     status: "read",
     genre: "Humor",
@@ -308,7 +308,7 @@ const books = [
   {
     title: "Random Acts of Fun",
     author: "Liz Pichon",
-    isbn: "9781761129452",
+    isbn: "9780702307447",
     rating: 4.52,
     status: "read",
     genre: "Humor",
@@ -320,7 +320,7 @@ const books = [
   {
     title: "Happy to Help (Eventually)",
     author: "Liz Pichon",
-    isbn: "9781761293559",
+    isbn: "9780702315343",
     rating: 4.53,
     status: "read",
     genre: "Humor",
@@ -332,7 +332,7 @@ const books = [
   {
     title: "Five Star Stories",
     author: "Liz Pichon",
-    isbn: "9781760263379",
+    isbn: "9780702325021",
     rating: 4.54,
     status: "read",
     genre: "Humor",
@@ -344,7 +344,7 @@ const books = [
   {
     title: "Book of Everything!",
     author: "Liz Pichon",
-    isbn: "9781761528330",
+    isbn: "9780702331589",
     rating: 4.46,
     status: "read",
     genre: "Activity",
@@ -356,7 +356,7 @@ const books = [
   {
     title: "Tom Gates Is Ha! Ha! Hilarious",
     author: "Liz Pichon",
-    isbn: "9781761641985",
+    isbn: "9780702334801",
     rating: 4.32,
     status: "read",
     genre: "Humor",
@@ -368,7 +368,7 @@ const books = [
   {
     title: "Pesky Pets and Parties (Hopefully)",
     author: "Liz Pichon",
-    isbn: "9781761728051",
+    isbn: "9780702334818",
     rating: 4.30,
     status: "read",
     genre: "Humor",
@@ -380,7 +380,7 @@ const books = [
   {
     title: "Tom Gates Is Not Famous (Yet!)",
     author: "Liz Pichon",
-    isbn: "9781761991301",
+    isbn: "9780702337772",
     rating: null,
     status: "read",
     genre: "Humor",
