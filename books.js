@@ -125,7 +125,7 @@ const books = [
     review: "",
     tags: ["Tom Gates", "Humor", "School"]
   },
-  {
+  { 
     title: "Genius Ideas (Mostly)",
     author: "Liz Pichon",
     isbn: "9781407134505",
